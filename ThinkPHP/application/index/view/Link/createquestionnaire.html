@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/public.css">
+    <link rel="stylesheet" href="__STATIC__/css/main.css">
+    <script src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div style="background: #0078c8">
+    <div class="container-fluid">
+        <div class="row text-nowrap" style="color: white;line-height: 50px;font-size: 16px">
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"><img class="img-responsive" src="__STATIC__/image/logo.png" alt=""></div>
+            <div class="col-lg-5 col-lg-5 col-md-5 col-sm-5"></div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"><a class="a_white" href="{:url('index/Link/myquestionnaire')}"><span class="glyphicon glyphicon-list-alt"></span> 我的问卷</a></div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1 dropdown">
+                <button type="button" class="btn btn-default"  data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span> <span id="uid_nav">admin</span> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="{:url('index/Link/personalcenter')}">用户信息</a></li>
+                    <li><a href="#">客服中心</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#">升级</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    消息
+                </button>
+
+            </div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1">
+                <button type="button" class="btn btn-default">
+                    <a class="" href="index.php?ctrlType=user&fcType=logout"><span class="glyphicon glyphicon-off"></span>退出</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background: #F7F8F8;height: 80px;line-height: 80px;">
+    <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    <div class="col-lg-2 col-md-2 col-sm-2"><span class="p_title">创建问卷</span></div>
+</div>
+
+<div style="margin-top: 100px" class="container">
+    <div class="row text-nowrap">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-1 col-md-1 col-sm-1"> <span class="p_title">调查名称:</span></div>
+        <div class="col-lg-8 col-md-8 col-sm-8"> <input id="qnrName" class="form-control" type="text"></div>
+    </div>
+
+</div>
+
+<div style="height: 100px; line-height: 100px;text-align: center">
+    <button id="createBtn" type="button" class="btn btn-primary" >立即创建</button>
+</div>
+
+<div class="container-fluid" >
+    <div style="height: 100px;"></div>
+    <div class="row text-center" style="background: #f7f8f9;height: 50px;line-height: 50px">
+        问卷星 | 不止问卷调查/在线考试
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var editQ_url = "{:url('index/Link/editq')}";
+    var islogin_url = "{:url('index/User/islogin')}";
+
+</script>
+<script src="__STATIC__/js/createQ.js"></script>

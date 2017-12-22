@@ -1,0 +1,44 @@
+[ 2017-12-18T14:09:43+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/captcha.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/captcha.html [运行时间：0.045084s][吞吐率：22.18req/s] [内存消耗：1,615.79kb] [文件加载：39]
+
+---------------------------------------------------------------
+[ 2017-12-18T14:34:33+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/index/link/login.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/index/link/login.html [运行时间：0.062382s][吞吐率：16.03req/s] [内存消耗：1,610.31kb] [文件加载：42]
+
+---------------------------------------------------------------
+[ 2017-12-18T14:35:18+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/index/link/login.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/index/link/login.html [运行时间：0.070949s][吞吐率：14.09req/s] [内存消耗：1,610.30kb] [文件加载：42]
+
+---------------------------------------------------------------
+[ 2017-12-18T14:35:28+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/index/link/login.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/index/link/login.html [运行时间：0.088066s][吞吐率：11.36req/s] [内存消耗：1,955.61kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2017-12-18T14:35:29+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/captcha.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/captcha.html [运行时间：0.098090s][吞吐率：10.19req/s] [内存消耗：1,616.06kb] [文件加载：39]
+
+---------------------------------------------------------------
+[ 2017-12-18T14:37:41+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/index/link/login.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/index/link/login.html [运行时间：0.060529s][吞吐率：16.52req/s] [内存消耗：1,610.30kb] [文件加载：42]
+
+---------------------------------------------------------------
+[ 2017-12-18T22:46:17+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/index/Link/home.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/index/Link/home.html [运行时间：0.710202s][吞吐率：1.41req/s] [内存消耗：1,970.14kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2017-12-18T22:46:19+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/index/link/login.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/index/link/login.html [运行时间：0.062173s][吞吐率：16.08req/s] [内存消耗：1,954.45kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2017-12-18T22:46:19+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/captcha.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/captcha.html [运行时间：0.108720s][吞吐率：9.20req/s] [内存消耗：1,615.02kb] [文件加载：39]
+
+---------------------------------------------------------------
+[ 2017-12-18T22:46:22+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/captcha.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/captcha.html [运行时间：0.058689s][吞吐率：17.04req/s] [内存消耗：1,615.01kb] [文件加载：39]
+
+---------------------------------------------------------------
+[ 2017-12-18T22:46:24+08:00 ] 127.0.0.1 127.0.0.1 GET /Thinkphp/public/index.php/captcha.html
+[ log ] 127.0.0.1/Thinkphp/public/index.php/captcha.html [运行时间：0.065048s][吞吐率：15.37req/s] [内存消耗：1,615.05kb] [文件加载：39]
+
+---------------------------------------------------------------

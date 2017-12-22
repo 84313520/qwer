@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/main.css">
+    <link rel="stylesheet" href="__STATIC__/css/login.css">
+    <script src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="display: none;position: fixed;z-index: 10;top: 0;width: 100%" id="myAlert" class="text-center alert alert-warning"> <a href="#" class="close" >&times;</a> <strong>警告！</strong>输入不能为空。 </div>
+
+<div id="all"></div>
+<div class="row" style="width: 100%">
+    <div class="container-fulid">
+        <div class="row" style="margin: 40px;">
+            <div class="col-lg-1 col-md-1 col-sm-1 text-center"><img src="__STATIC__/image/logo.png" alt="" height="60px" width="150px"></div>
+            <div class="col-lg-9 col-md-9 col-sm-9 text-center"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 text-center">
+                <input type="button" value="注册" class="btn_opacity">
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center">
+                <input type="button" value="返回首页" class="btn_opacity" id="mainBtn">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="validate-box container">
+    <div id="loginDiv">
+        <h1 class="head_orange">问卷星登录</h1>
+        <div class="row" style="position: relative"><img class="icon" src="__STATIC__/image/user.png" alt=""><input type="text" class="input1" placeholder="账号" id="uid"></div>
+        <div class="row" style="position: relative;margin-top: 10px"><img class="icon" src="__STATIC__/image/password.png" alt=""><input type="password" class="input1" placeholder="密码" id="upsw"></div>
+        <div class="row">
+            <input type="checkbox"><span>下次自动登录</span>
+            <a style="float: right" href="#">忘记用户名/密码?</a>
+        </div>
+        <div class="row">
+            <input id="yzm" type="text" placeholder="验证码" class="">
+            <div><img src="{:captcha_src()}" alt="captcha" onclick="changeYZM(this)"/></div>
+        </div>
+        <div class="row">
+            <input id="loginBtn" type="button" value="登录" class="btn_login transition">
+        </div>
+        <div class="row">
+            <input type="button" value="立即注册" class="btn_register transition">
+        </div>
+
+        <div class="row text-center">
+
+            <img src="__STATIC__/image/qq.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    var homeUrl = "{:url('index/Link/home')}";
+    var myQUrl = "{:url('index/Link/myquestionnaire')}"
+    var dologin_url = "{:url('index/User/dologin')}";
+
+    function changeYZM(obj){
+        obj.src = "{:captcha_src()}";
+    }
+</script>
+<script src="__STATIC__/js/login.js"></script>

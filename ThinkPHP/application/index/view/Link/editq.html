@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/public.css">
+    <link rel="stylesheet" href="__STATIC__/css/main.css">
+    <link rel="stylesheet" href="__STATIC__/css/editQ.css">
+    <script src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body style="background: #eeeeee">
+<div id="vue">
+
+
+    <div style="background: #0078c8">
+        <div class="container-fluid">
+            <div class="row text-nowrap" style="color: white;line-height: 50px;font-size: 16px">
+                <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"></div>
+                <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"><img class="img-responsive" src="__STATIC__/image/logo.png" alt=""></div>
+                <div class="col-lg-5 col-lg-5 col-md-5 col-sm-5"></div>
+                <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"><a class="a_white" href="{:url('index/Link/myquestionnaire')}"><span class="glyphicon glyphicon-list-alt"></span> 我的问卷</a></div>
+                <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1 dropdown">
+                    <button type="button" class="btn btn-default"  data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> <span id="uid_nav">admin</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="{':url('index/Link/personalcenter')'}">用户信息</a></li>
+                        <li><a href="#">客服中心</a></li>
+                        <li class="divider"></li>
+                        <li class="disabled"><a href="#">升级</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        消息
+                    </button>
+
+                </div>
+                <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1">
+                    <button type="button" class="btn btn-default">
+                        <a class="" href="index.php?ctrlType=user&fcType=logout"><span class="glyphicon glyphicon-off"></span>退出</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: #F7F8F8;height: 80px;line-height: 80px;">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><button v-on:click="saveQnr" id="saveBtn" type="button" class="btn transition btn_orange">完成编辑</button></div> <div class="col-lg-2 col-md-2 col-sm-2"><button type="button" class="btn transition btn_orange">预览</button></div>
+    </div>
+
+    <div class="container text-nowrap">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div id="content" class="col-lg-8 col-md-8 col-sm-8">
+            <div class="row" style="background: #0095da">
+                <div class="col-lg-2"><button v-on:click="addQ" id="danxuan" type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span> 单选</button></div>
+                <div class="col-lg-2"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span> 多选</button></div>
+            </div>
+            <div class="row" style="height: 600px;overflow-y: scroll;padding: 20px">
+                <p id="qnrname_p" style="color: red;text-align: center;font-size: 20px;font-weight: bold">
+<!--                    原本是php节点-->
+                    {$qnrName}
+                </p>
+                <div style="height: 20px;"></div>
+                <div style="display: none;position: fixed;z-index: 10;bottom: 0;" id="myAlert" class="alert alert-warning"> <a href="#" class="close" >&times;</a> <strong>警告！</strong>请至少保留一个选项。 </div>
+
+                <div id="tm_div">
+                    <div class="div_option col-lg-12 col-md-12 col-sm-12" v-for="item in tmArr">
+                        <p><span>{{item.num}}</span>、<input v-model="item.title" type="text" placeholder="请输入题目"></p>
+                        <ul class="ul_option">
+                            <li style="margin-top: 5px" v-for="opt in item.arr">
+                                <span class="glyphicon glyphicon-record"></span> <input v-model="opt.ot" type="text" placeholder="请输入选项">
+                                <input type="button" value="↓" class="btn_green" style="float: right" v-on:click="movedownOpt">
+                                <input type="button" value="↑" class="btn_green" style="float: right" v-on:click="moveupOpt">
+                                <input type="button" value="-" class="btn_green" style="float: right" v-on:click="delOpt">
+                                <input type="button" value="+" class="btn_green" style="float: right" v-on:click="addOpt">
+                            </li>
+                        </ul>
+                        <div class="div_folder"></div>
+                        <div>
+                            <button v-on:click="delQ" type="button" class="btn btn-default">删除</button>
+                            <button v-on:click="saveQ" type="button" class="btn btn-default">保存</button>
+                            <button v-on:click="moveupQ" type="button" class="btn btn-default">上移</button>
+                            <button v-on:click="movedownQ" type="button" class="btn btn-default">下移</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    </div>
+
+
+
+
+    <div class="container-fluid" >
+        <div style="height: 100px;"></div>
+        <div class="row text-center" style="background: #f7f8f9;height: 50px;line-height: 50px">
+            问卷星 | 不止问卷调查/在线考试
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+</script>
+<script>
+    var createQnr_url = "{:url('index/Qnr/createqnr')}";
+    var islogin_url = "{:url('index/User/islogin')}";
+
+</script>
+<script src="__STATIC__/js/drawQ.js"></script>
+<script src="__STATIC__/js/editQ.js"></script>

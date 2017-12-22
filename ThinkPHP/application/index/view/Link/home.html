@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/main.css">
+    <script src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--nav-->
+<div class="container-fluid navbar-fixed-top nav">
+    <div class="container text-nowrap nav_flex">
+        <div class="row ">
+
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text "><img src="__STATIC__/image/logonew.png" alt="" height="40" width="130"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 nav_text "></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text ">首页</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text ">企业展示</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text ">企业版服务</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text ">样本服务</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text"><span>问卷调查模板</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text"><input id="loginBtn" type="button" value="登录" class="btn btn-default"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text"><input type="button" value="注册" class="btn btn-default"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 nav_text"><input type="button" value="微信登录" class="btn btn-warning" id="weLogin"></div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--banner-->
+<div id="banner" class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <h1 class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 150px;text-align: center;color: lightgray">不止问卷调查 / 在线考试</h1>
+        </div>
+        <div class="container-fluid h2" style="text-align: center;margin: 20px 0 40px 0;color: lightgray">
+            <span style="color: #FF9300">1,873</span > 万用户已在问卷星上回收 <span style="color: #FF9300">11.72</span> 亿份答卷
+        </div>
+        <div class="container-fluid" style="text-align: center">
+            <input type="button" value="免费使用" class="transition btn-big">
+        </div>
+    </div>
+    <div id="banner-bottom" class="container text-nowrap" style="line-height: 80px;">
+        <div class="col-lg-2 col-md-2 col-sm-2" >NEW!</div>
+
+        <div class="col-lg-8 col-md-8 col-sm-8" style="font-size: 14px">新版考试系统上线，满足员工培训考核、党建知识竞赛、课后练习考试等多种使用场景立即体验
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="button" value="立即体验" class="btn-new transition"></div>
+    </div>
+</div>
+<!--content-->
+<!--1-->
+<div class="container-fluid" style="">
+    <div class="container">
+        <div class="row">
+            <div style="height: 100px"></div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 "></div>
+                <div class="col-lg-5 col-md-5 "><img src="__STATIC__/image/survey.png" alt=""></div>
+                <div class="col-lg-5 col-md-5 ">
+                    <div style="height: 80px;"></div>
+                    <h3 class="text-normal">在线问卷调查既复杂又简单，我们将诸多强大的功能集成到系统中，把最好的用户体验交给您。</h3>
+                    <div class="row text-normal">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">轻松导入问卷</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">原始数据下载</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">多渠道分发问卷</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">自动生成图表</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">完美适配移动端</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5"><span>付费收集答卷</span></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <input type="button" value="问卷调查介绍" class="transiton btn btn-solid btn-primary" style="margin-left: 16px">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--2-->
+<div class="container-fluid bg_gray">
+    <div class="container">
+        <div class="row">
+            <div style="height: 100px"></div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 "></div>
+                <div class="col-lg-5 col-md-5 ">
+                    <div style="height: 80px;"></div>
+                    <h3 class="text-normal">整合线下考试的场景和线上系统的优势，问卷星在线考试定会对您大
+                        有助益。</h3>
+                    <div class="row text-normal">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">批量录入试题</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">题库随机抽题</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">考试时间控制</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">系统自动阅卷</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">自定义成绩单</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5"><span>成绩查询系统</span></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <input type="button" value="在线考试系统介绍" class="transition btn btn_orange" style="margin-left: 16px">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 ">
+                    <img src="__STATIC__/image/test.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--3-->
+<div class="container-fluid" >
+    <div class="container">
+        <div class="row">
+            <div style="height: 100px"></div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 "></div>
+                <div class="col-lg-5 col-md-5 "><img src="__STATIC__/image/360.png" alt=""></div>
+                <div class="col-lg-5 col-md-5 ">
+                    <div style="height: 80px;"></div>
+                    <h3 class="text-normal">360度评估操作简单、功能强大，能全方位、多维度评估员工，
+                        挖掘员工发展潜力，帮助企业挑选和培养优秀人才。</h3>
+                    <div class="row text-normal">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">人员名单批量导入</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">一对多批量评估</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">维度/权重/部门设置</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">邮件/短信/密码邀请</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">多终端直接作答</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5"><span>个人/部门详细报告</span></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <input type="button" value="360度评估介绍" class="transiton btn btn-primary" style="margin-left: 16px">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--4-->
+<div class="container-fluid bg_gray">
+    <div class="container">
+        <div class="row">
+            <div style="height: 100px"></div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 "></div>
+                <div class="col-lg-5 col-md-5 ">
+                    <div style="height: 80px;"></div>
+                    <h3 class="text-normal">报名表单功能总是能让您的工作事半功倍。</h3>
+                    <div class="row text-normal">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">活动报名</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">信息收集</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">微信签到</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">意见反馈表</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">用户信息表</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5"><span>数据标记查询</span></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <input type="button" value="报名表单介绍" class="transition btn btn_orange" style="margin-left: 16px">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 ">
+                    <img src="__STATIC__/image/form.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--5-->
+<div class="container-fluid" >
+    <div class="container">
+        <div class="row">
+            <div style="height: 100px"></div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 "></div>
+                <div class="col-lg-5 col-md-5 "><img src="__STATIC__/image/evaluation.png" alt=""></div>
+                <div class="col-lg-5 col-md-5 ">
+                    <div style="height: 80px;"></div>
+                    <h3 class="text-normal">在线测评为您提供了丰富的个性化测评设置空间，专业的功能
+                        设置直观展现差异化的测评结果，从而搭建专属您的测评系统。</h3>
+                    <div class="row text-normal">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">多级维度设置</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">标准分差值对比</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">自定义测评结果</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">可视化测评数据</div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <input type="button" value="在线评测介绍" class="transition btn btn-solid btn-primary" style="margin-left: 16px">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--6-->
+<div class="container-fluid bg_gray">
+    <div class="container">
+        <div class="row">
+            <div style="height: 100px"></div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 "></div>
+                <div class="col-lg-5 col-md-5 ">
+                    <div style="height: 80px;"></div>
+                    <h3 class="text-normal">准备好素材，分分钟就可以拥有一个强大的在线投票平台。</h3>
+                    <div class="row text-normal">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">文字投票</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">图片评选</div>
+                    </div>
+                    <div class="row text-normal" style="margin-top: 14px">
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5">视频竞选</div>
+                        <div class="col-lg-1 col-md-1 col-sm-1"><img src="__STATIC__/image/tick_gray.png" alt=""></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5">防刷票设置</div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <input type="button" value="在线投票介绍" class="transition btn btn_orange" style="margin-left: 16px">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 ">
+                    <img src="__STATIC__/image/vote.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--guanggao-->
+<div class="container">
+    <div style="height: 388px;margin: 110px 0;text-align: center">
+        <h3 style="color: gray;">他们正在使用</h3>
+    </div>
+</div>
+<!--footer-->
+<div class="container-fluid" style="background: #494b4c;height: 340px;">
+
+</div>
+
+
+</body>
+</html>
+<script>var loginUrl = "{:url('index/Link/login')}"</script>
+<script src="__STATIC__/js/main.js"></script>

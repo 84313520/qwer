@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/public.css">
+    <link rel="stylesheet" href="__STATIC__/css/main.css">
+    <script src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div style="background: #0078c8">
+    <div class="container-fluid">
+        <div class="row text-nowrap" style="color: white;line-height: 50px;font-size: 16px">
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"><img class="img-responsive" src="__STATIC__/image/logo.png" alt=""></div>
+            <div class="col-lg-5 col-lg-5 col-md-5 col-sm-5"></div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1"><a class="a_white" href="{:url('index/Link/myquestionnaire')}"><span class="glyphicon glyphicon-list-alt"></span> 我的问卷</a></div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1 dropdown">
+                <button type="button" class="btn btn-default"  data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span> <span id="uid_nav">admin</span> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="{:url('index/Link/personalcenter')}">用户信息</a></li>
+                    <li><a href="#">客服中心</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#">升级</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    消息
+                </button>
+
+            </div>
+            <div class="col-lg-1 col-lg-1 col-md-1 col-sm-1">
+                <button type="button" class="btn btn-default">
+                    <a class="" href="index.php?ctrlType=user&fcType=logout"><span class="glyphicon glyphicon-off"></span>退出</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 20px">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 "></div>
+        <div class="col-lg-5 col-md-5 ">
+            <div class="div1">
+                <p class="p_title"><span class="glyphicon glyphicon-user"></span> 注册信息</p>
+                <div class="div_content">
+                    <p><b>用户名：</b><span>13609593161</span></p>
+                    <p><b>账户类型：</b><span>免费版</span></p>
+                    <p><b>邮件：</b><span>84313520@qq.com</span></p>
+                    <p><b>收集：</b><span>13609593161</span></p>
+                    <p><button type="button" class="btn_blue">设置密码</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 ">
+            <div class="div1" >
+                <p class="p_title"><span class="glyphicon glyphicon-user"></span> 公司信息</p>
+                <div class="div_content" style="height: 188px;">
+                    <p><b>名称：</b><span>请输入</span></p>
+                    <p><b>自定义域名：</b><span>请输入</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 "></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 "></div>
+        <div class="col-lg-5 col-md-5 ">
+            <div class="div1">
+                <p class="p_title"><span class="glyphicon glyphicon-user"></span> 账户信息</p>
+                <div class="div_content">
+                    <p><b>可用账户金额：</b><span>0</span></p>
+                    <p><b>可发送短信数：</b><span>0</span></p>
+                    <p><b>可用存储空间：</b><span>0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>
